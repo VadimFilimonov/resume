@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Vadim Filimonov",
+    "label": "Frontend Developer",
+    "image": "",
+    "email": "philimonovvadim@gmail.com",
+    "url": "http://vadimfilimonov.github.io",
+    "location": {
+      "city": "Krasnodar",
+      "countryCode": "RU"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "Vadim_Filimonov",
+        "url": "https://twitter.com/vadim_filimonov"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Vadim Filimonov",
+        "url": "https://www.linkedin.com/in/vadim-filimonov"
+      },
+      {
+        "network": "Telegram",
+        "username": "VadimFilimonov",
+        "url": "https://t.me/VadimFilimonov"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ruport",
+      "location": "Krasnodar",
+      "description": "Awesome compression company",
+      "position": "Frontend Developer",
+      "url": "http:/ruport.ru",
+      "startDate": "2019-06-11",
+      "summary": ""
+    },
+    {
+      "name": "AGA! Digital (ex-Clipsite)",
+      "location": "Armavir",
+      "description": "Web Studio",
+      "position": "Drupal Developer",
+      "url": "http:/aga.digital",
+      "startDate": "2017-01-11",
+      "endDate": "2019-04-30",
+      "summary": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kuban State University of Technology",
+      "url": "https://kubstu.ru/en",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2012-09-01",
+      "endDate": "2016-08-01",
+      "gpa": "4.0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "SCSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Russian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Pre-Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Videos",
+      "keywords": ["YouTube", "Movies", "TV Series"]
+    },
+    {
+      "name": "Books",
+      "keywords": ["Popular science", "Business literature"]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2020-11-05T22:00:00"
+  }
+}

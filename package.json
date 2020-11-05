@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "resume serve",
+    "build": "resume export index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vadim Filimonov",
+  "license": "ISC",
+  "devDependencies": {
+    "resume-cli": "^2.0.0"
+  }
+}
