@@ -124,14 +124,6 @@ h6 {
   font-size: var(--scale0);
 }
 
-p:not(:first-child) {
-  margin-top: 1em;
-}
-
-p:not(:last-child) {
-  margin-bottom: 1em;
-}
-
 blockquote {
   border-left: 0.2em solid var(--mutedColor);
   padding-left: 1em;
@@ -146,7 +138,7 @@ cite::before {
   content: '— ';
 }
 
-header {
+.masthead {
   background: var(--mutedColor);
   display: inherit;
   gap: inherit;
@@ -156,9 +148,14 @@ header {
   row-gap: 0;
 }
 
-header > *,
+.masthead > *,
 section {
   grid-column: main;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
 }
 
 .stack {
@@ -202,13 +199,13 @@ section {
   padding: 0.2em 0.6em;
 }
 
-@media (min-width: 48em) {
+@media print, (min-width: 48em) {
   h3 {
     text-align: right;
     margin-bottom: inherit;
   }
 
-  header > *,
+  .masthead > *,
   section {
     grid-column: content;
   }
@@ -224,7 +221,7 @@ section {
 </style>
   </head>
   <body>
-      <header>
+      <header class="masthead">
           <h1>Vadim Filimonov</h1>
           <h2>Frontend Developer</h2>
       </header>
@@ -232,12 +229,12 @@ section {
         <h3>Contact</h3>
         <div class="grid-list">
             <div>
-              <h6>Email</h6>
+              <h4>Email</h4>
               <a href="mailto:philimonovvadim@gmail.com">philimonovvadim@gmail.com</a>
             </div>
             <div>
-              <h6>Website</h6>
-              <a href="http://vadimfilimonov.github.io">http://vadimfilimonov.github.io</a>
+              <h4>Website</h4>
+              <a href="http://vadimfilimonov.github.io">vadimfilimonov.github.io</a>
             </div>
         </div>
       </section>
@@ -245,15 +242,15 @@ section {
           <h3>Profiles</h3>
           <div class="grid-list">
               <div>
-                  <h6>Twitter</h6>
+                  <h4>Twitter</h4>
                     <a href="https://twitter.com/vadim_filimonov">Vadim_Filimonov</a>
               </div>
               <div>
-                  <h6>LinkedIn</h6>
+                  <h4>LinkedIn</h4>
                     <a href="https://www.linkedin.com/in/vadim-filimonov">Vadim Filimonov</a>
               </div>
               <div>
-                  <h6>Telegram</h6>
+                  <h4>Telegram</h4>
                     <a href="https://t.me/VadimFilimonov">VadimFilimonov</a>
               </div>
           </div>
@@ -263,32 +260,36 @@ section {
         <h3>Work</h3>
         <div class="stack">
             <article>
-              <div class="spaced-list">
-                <h4>Ruport</h4>
-                <span>
-                  <time datetime="2019-06-11">Jun 2019</time> –
-                  Present
-                </span>
-              </div>
-              <div class="spaced-list">
-                  <strong>Frontend Developer</strong>
-                  <a href="http:/ruport.ru">http:/ruport.ru</a>
-              </div>
-                <p></p>
+              <header>
+                <div class="spaced-list">
+                  <h4>Ruport</h4>
+                  <span>
+                    <time datetime="2019-06-11">Jun 2019</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Frontend Developer</strong>
+                    <a href="http://ruport.ru">ruport.ru</a>
+                </div>
+              </header>
+                
             </article>
             <article>
-              <div class="spaced-list">
-                <h4>AGA! Digital (ex-Clipsite)</h4>
-                <span>
-                  <time datetime="2017-01-11">Jan 2017</time> –
-                  <time datetime="2019-04-30">Apr 2019</time>
-                </span>
-              </div>
-              <div class="spaced-list">
-                  <strong>Drupal Developer</strong>
-                  <a href="http:/aga.digital">http:/aga.digital</a>
-              </div>
-                <p></p>
+              <header>
+                <div class="spaced-list">
+                  <h4>AGA! Digital (ex-Clipsite)</h4>
+                  <span>
+                    <time datetime="2017-01-11">Jan 2017</time> –
+                    <time datetime="2019-04-30">Apr 2019</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Drupal Developer</strong>
+                    <a href="http://aga.digital">aga.digital</a>
+                </div>
+              </header>
+                
             </article>
         </div>
       </section>
@@ -296,17 +297,19 @@ section {
         <h3>Education</h3>
         <div class="stack">
             <article>
-              <div class="spaced-list">
-                <h4>Armavir Institute of Mechanics and Technology</h4>
-                <span>
-                  <time datetime="2012-09-01">Sep 2012</time> –
-                  <time datetime="2016-08-01">Aug 2016</time>
-                </span>
-              </div>
-              <div class="spaced-list">
-                  <strong>Information Technology</strong>
-                  <a href="http://amti.ru/">http://amti.ru/</a>
-              </div>
+              <header>
+                <div class="spaced-list">
+                  <h4>Kuban State Technological University</h4>
+                  <span>
+                    <time datetime="2012-09-01">Sep 2012</time> –
+                    <time datetime="2016-08-01">Aug 2016</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Information Technology</strong>
+                    <a href="https://kubstu.ru/en">kubstu.ru/en</a>
+                </div>
+              </header>
                 <p>Bachelor</p>
             </article>
         </div>
@@ -315,12 +318,14 @@ section {
         <h3>Skills</h3>
         <div class="grid-list">
             <div>
-                <h5>Web Development</h5>
+                <h4>Web Development</h4>
                 <ul class="tag-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>SCSS</li>
                     <li>Javascript</li>
+                    <li>React</li>
+                    <li>Redux</li>
                 </ul>
             </div>
         </div>
@@ -329,11 +334,11 @@ section {
         <h3>Languages</h3>
         <div class="grid-list">
             <div>
-                <h6>Russian</h6>
+                <h4>Russian</h4>
               Native speaker
             </div>
             <div>
-                <h6>English</h6>
+                <h4>English</h4>
               Pre-Intermediate
             </div>
         </div>
@@ -342,7 +347,7 @@ section {
         <h3>Interests</h3>
         <div class="grid-list">
             <div>
-                <h5>Videos</h5>
+                <h4>Videos</h4>
                 <ul class="tag-list">
                     <li>YouTube</li>
                     <li>Movies</li>
@@ -350,7 +355,7 @@ section {
                 </ul>
             </div>
             <div>
-                <h5>Books</h5>
+                <h4>Books</h4>
                 <ul class="tag-list">
                     <li>Popular science</li>
                     <li>Business literature</li>

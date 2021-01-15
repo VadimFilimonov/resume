@@ -9,6 +9,7 @@
   "author": "Vadim Filimonov",
   "license": "ISC",
   "devDependencies": {
+    "jsonresume-theme-even": "^0.6.0",
     "resume-cli": "^2.0.0"
   }
 }

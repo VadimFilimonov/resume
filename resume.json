@@ -32,9 +32,9 @@
     {
       "name": "Ruport",
       "location": "Krasnodar",
-      "description": "Awesome compression company",
+      "description": "Creative Agency",
       "position": "Frontend Developer",
-      "url": "http:/ruport.ru",
+      "url": "http://ruport.ru",
       "startDate": "2019-06-11",
       "summary": ""
     },
@@ -43,7 +43,7 @@
       "location": "Armavir",
       "description": "Web Studio",
       "position": "Drupal Developer",
-      "url": "http:/aga.digital",
+      "url": "http://aga.digital",
       "startDate": "2017-01-11",
       "endDate": "2019-04-30",
       "summary": ""
@@ -51,7 +51,7 @@
   ],
   "education": [
     {
-      "institution": "Kuban State University of Technology",
+      "institution": "Kuban State Technological University",
       "url": "https://kubstu.ru/en",
       "area": "Information Technology",
       "studyType": "Bachelor",
@@ -64,7 +64,7 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "SCSS", "Javascript"]
+      "keywords": ["HTML", "CSS", "SCSS", "Javascript", "React", "Redux"]
     }
   ],
   "languages": [
@@ -90,6 +90,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2020-11-05T22:00:00"
+    "lastModified": "2021-01-15T23:30:00"
   }
 }
